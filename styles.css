@@ -1,0 +1,454 @@
+/* CSS Custom Properties */
+:root {
+    --bg-color: #ebeff0;
+    --text-color: #102E47;
+    --accent-color: #79fcb0;
+    --white: #ffffff;
+    --footer-bg: #102e47;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Bodoni Moda', serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.container {
+    max-width: 1416px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero .container {
+    max-width: 1176px;
+}
+
+/* Typography */
+.hero-title {
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+    font-size: 120px;
+    font-style: normal;
+    line-height: normal;
+    color: #102E47;
+    margin-bottom: 0;
+    position: relative;
+    background-color: var(--accent-color);
+    width: 744px;
+    height: 215px;
+    left: -25px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: normal;
+    color: var(--text-color);
+    margin-bottom: 0;
+    padding-left: 120px;
+}
+
+.hero-description {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #102E47;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+a:not(.social-links a):not(.footer-links a):hover {
+    opacity: 0.7;
+}
+
+.social-links,
+.footer-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.social-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #102E47;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    text-underline-position: from-font;
+    transition: text-decoration-style 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #102E47;
+    text-decoration-style: solid;
+}
+
+.footer-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--accent-color);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    text-underline-position: from-font;
+    transition: text-decoration-style 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    text-decoration-style: solid;
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero {
+    padding: 240px 0;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    align-items: flex-start;
+}
+
+.hero > .container > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+}
+
+/* My Work Section */
+.my-work {
+    padding: 0;
+}
+
+body > section {
+    margin-bottom: 120px;
+}
+
+body > section:last-child,
+.cta,
+.footer {
+    margin-bottom: 0;
+}
+
+.work-items {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.work-item {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.work-item:hover {
+    background-color: #fafafa;
+}
+
+.work-item:last-child {
+    border-bottom: none;
+}
+
+.work-image-placeholder {
+    position: absolute;
+    width: 217px;
+    height: 434px;
+    left: 302px;
+    top: 83px;
+    background-color: var(--bg-color);
+    border-radius: 108.5px;
+}
+
+.work-button-placeholder {
+    position: absolute;
+    width: 427px;
+    height: 192px;
+    left: 626px;
+    top: 204px;
+    background-color: var(--accent-color);
+    border-radius: 217px;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: var(--accent-color);
+    padding: 96px 361px;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cta-text {
+    font-family: 'Boldonse', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #102E47;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    padding: 0;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 696px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    color: #102E47;
+    margin-bottom: 1.5rem;
+}
+
+.about-content strong {
+    font-weight: 700;
+}
+
+/* Contact Section */
+.contact {
+    padding: 0;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+.contact-email-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 240px 0 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-email {
+    position: relative;
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: normal;
+    color: #102E47;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    z-index: 2;
+}
+
+.contact-email::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 467px);
+    top: -62px;
+    width: 934px;
+    height: 240px;
+    background-color: var(--accent-color);
+    z-index: -1;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg);
+    padding: 96px 0;
+    width: 100%;
+}
+
+.footer .container {
+    max-width: 1175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.footer-name {
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--accent-color);
+}
+
+.social-links a,
+.footer-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #102E47;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    text-underline-position: from-font;
+    transition: text-decoration-style 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #102E47;
+    text-decoration-style: solid;
+}
+
+.footer-links a {
+    color: var(--accent-color);
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    text-decoration-style: solid;
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .hero-description {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    .contact-email {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+
+    .cta-text {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    .my-work,
+    .about,
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .cta {
+        padding: 3rem 0;
+    }
+
+    .work-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+
+    .work-image-placeholder {
+        width: 100%;
+        height: 200px;
+    }
+
+    .work-button-placeholder {
+        width: 100px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links,
+    .footer-links {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero {
+        padding: 3rem 0 2rem;
+    }
+
+    .social-links,
+    .footer-links {
+        gap: 1rem;
+    }
+}
+
